@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts } from 'redux/selectors';
-import { addNewContact } from 'redux/actions';
+import { addNewContact } from 'redux/slice';
 
 const ContactForm = () => {
   const contacts = useSelector(getContacts);

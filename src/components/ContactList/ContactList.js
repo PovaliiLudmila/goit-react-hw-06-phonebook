@@ -1,13 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux';
-
 import { getFilterValue, getContacts } from 'redux/selectors';
-import { deleteContact } from 'redux/actions';
+import { deleteContact } from 'redux/slice';
 
 const ContactList = () => {
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilterValue);
   const dispatch = useDispatch();
-
+  
   const filteredContacts = contacts.filter(
     contact =>
       contact.name.toLowerCase().includes(filter.toLowerCase()) ||
@@ -16,6 +15,7 @@ const ContactList = () => {
 
   const handleDelete = idToDelete => {
     dispatch(deleteContact(idToDelete));
+    
   };
 
   return filteredContacts.length > 0 ? (

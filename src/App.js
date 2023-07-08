@@ -1,8 +1,13 @@
 import ContactForm from './components/ContactForm/ContactForm';
 import ContactList from './components/ContactList/ContactList';
 import Filter from './components/Filter/Filter';
+import { contactSlice } from 'redux/redux';
 
 const App = () => {
+  // const contacts = useSelector(state => state.contactState.contacts);
+  // const filter = useSelector(state => state.contactState.filter);
+  // const dispatch = useDispatch();
+
   return (
     <div>
       <h1>Phonebook</h1>
