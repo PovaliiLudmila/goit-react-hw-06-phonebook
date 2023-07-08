@@ -38,3 +38,4 @@ export const persistedContactSlice = persistReducer(
   persistConfig,
   contactSlice.reducer
 );
+export const {addNewContact, deleteContact, setFilter} = contactSlice.actions;
