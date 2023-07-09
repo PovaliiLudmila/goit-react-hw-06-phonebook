@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { persistedContactSlice } from './redux';
+import { persistedContactSlice } from './createSlice';
 import {
   persistStore,
   FLUSH,

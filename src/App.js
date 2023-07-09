@@ -1,7 +1,7 @@
 import ContactForm from './components/ContactForm/ContactForm';
 import ContactList from './components/ContactList/ContactList';
 import Filter from './components/Filter/Filter';
-import { contactSlice } from 'redux/redux';
+import { contactSlice } from 'redux/createSlice';
 
 const App = () => {
   // const contacts = useSelector(state => state.contactState.contacts);
